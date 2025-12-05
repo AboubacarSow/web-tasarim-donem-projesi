@@ -40,378 +40,326 @@
 
   <header id="header" class="header position-relative">
     <div class="container-fluid container-xl position-relative">
-
       <div class="top-row d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-end">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.webp" alt=""> -->
-          <h1 class="sitename">Blogy</h1><span>.</span>
+          <h1 class="sitename">Blogy</h1>
+          <span>.</span>
         </a>
 
         <div class="d-flex align-items-center">
           <div class="social-links">
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.bi-linkedin.com/" class="instagram"><i class="bi bi-linkedin"></i></a>
           </div>
 
           <form class="search-form ms-4">
-            <input type="text" placeholder="Search..." class="form-control">
-            <button type="submit" class="btn"><i class="bi bi-search"></i></button>
+            <input type="text" placeholder="Ara..." class="form-control" />
+            <button type="submit" class="btn">
+              <i class="bi bi-search"></i>
+            </button>
           </form>
         </div>
       </div>
-
     </div>
 
     <div class="nav-wrap">
       <div class="container d-flex justify-content-center position-relative">
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="category.html" class="active">Category</a></li>
-            <li><a href="blog-details.html">Blog Details</a></li>
+            <li><a href="index.html" class="active">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="category.html">Kategoriler</a></li>
+            <li><a href="blogs.html">Bloglar</a></li>
             <li><a href="author-profile.html">Author Profile</a></li>
-            <li class="dropdown"><a href="#"><span>Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><a href="about.html">About</a></li>
-                <li><a href="category.html" class="active">Category</a></li>
-                <li><a href="blog-details.html">Blog Details</a></li>
-                <li><a href="author-profile.html">Author Profile</a></li>
-                <li><a href="search-results.html">Search Results</a></li>
-                <li><a href="404.html">404 Not Found Page</a></li>
-
-                <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">İletişim</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
       </div>
     </div>
-
   </header>
 
-  <main class="main">
+ <main class="main">
 
-    <!-- Page Title -->
+  <!-- Page Title -->
     <div class="page-title position-relative">
       <div class="breadcrumbs">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i> Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Category</a></li>
-            <li class="breadcrumb-item active current">Category</li>
+            <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house"></i> Ana Sayfa</a></li>
+            <li class="breadcrumb-item active" aria-current="page" >Kategoriler</li>
           </ol>
         </nav>
       </div>
 
       <div class="title-wrapper">
-        <h1>Blog Category</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <h1>Kategoriler</h1>
+        <span class="badge  px-3 py-2 rounded-pill" style="background: #279a7d;">6 Kategori</span>
+        <p class="mt-3">
+          İlgi alanınıza göre hazırlanmış içeriklerimizi keşfedin.
+          Blogy’de her kategori kaliteli, özgün ve güncel yazılarla sizlere sunulmaktadır.
+        </p>
       </div>
     </div><!-- End Page Title -->
 
     <div class="container">
       <div class="row">
-
         <div class="col-lg-8">
 
-          <!-- Category Postst Section -->
+          <!-- Category Posts Section -->
           <section id="category-postst" class="category-postst section">
-
             <div class="container" data-aos="fade-up" data-aos-delay="100">
               <div class="row gy-4">
 
+                <!-- Post 1 -->
                 <div class="col-lg-6">
-                  <article>
-
+                  <article class="border-bottom pb-4">
                     <div class="post-img">
-                      <img src="assets/img/blog/blog-post-1.webp" alt="" class="img-fluid">
+                      <img src="assets/img/blog/siyaset.jpeg" style="width: 100%;" alt="" class="img-fluid" />
                     </div>
 
-                    <p class="post-category">Politics</p>
+                    <p class="post-category">Siyaset</p>
 
                     <h2 class="title">
-                      <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
+                      <a href="blog-details.html">Toplumsal Hak ve Adalet Üzerine Yeni Bir Dönem</a>
                     </h2>
 
                     <div class="d-flex align-items-center">
-                      <img src="assets/img/person/person-f-12.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
+                      <img src="assets/img/person/person-f-12.webp" alt="" class="img-fluid post-author-img flex-shrink-0" />
                       <div class="post-meta">
-                        <p class="post-author">Maria Doe</p>
+                        <p class="post-author">Meryem Doğan</p>
                         <p class="post-date">
-                          <time datetime="2022-01-01">Jan 1, 2022</time>
+                          <time datetime="2025-01-05">5 Ocak 2025</time>
                         </p>
                       </div>
                     </div>
-
                   </article>
-                </div><!-- End post list item -->
+                </div>
 
+                <!-- Post 2 -->
                 <div class="col-lg-6">
-                  <article>
-
+                  <article class="border-bottom pb-4">
                     <div class="post-img">
-                      <img src="assets/img/blog/blog-post-2.webp" alt="" class="img-fluid">
+                      <img src="assets/img/blog/takim.jpeg" style="width: 100%;" alt="" class="img-fluid" />
                     </div>
 
-                    <p class="post-category">Sports</p>
+                    <p class="post-category">Spor</p>
 
                     <h2 class="title">
-                      <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                      <a href="blog-details.html">Takımlar Arasındaki Fark Kapanıyor: Yeni İstatistik Analizi</a>
                     </h2>
 
                     <div class="d-flex align-items-center">
-                      <img src="assets/img/person/person-f-13.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
+                      <img src="assets/img/person/person-f-13.webp" alt="" class="img-fluid post-author-img flex-shrink-0" />
                       <div class="post-meta">
-                        <p class="post-author">Allisa Mayer</p>
+                        <p class="post-author">Aslı Mayır</p>
                         <p class="post-date">
-                          <time datetime="2022-01-01">Jun 5, 2022</time>
+                          <time datetime="2025-02-10">10 Şubat 2025</time>
                         </p>
                       </div>
                     </div>
-
                   </article>
-                </div><!-- End post list item -->
+                </div>
 
+                <!-- Post 3 -->
                 <div class="col-lg-6">
-                  <article>
-
+                  <article class="border-bottom pb-4">
                     <div class="post-img">
-                      <img src="assets/img/blog/blog-post-3.webp" alt="" class="img-fluid">
+                      <img src="assets/img/blog/blog-post-3.webp" alt="" class="img-fluid" />
                     </div>
 
-                    <p class="post-category">Entertainment</p>
+                    <p class="post-category">Eğlence</p>
 
                     <h2 class="title">
-                      <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                      <a href="blog-details.html">Bu Yazın En Çok Konuşulan Dizisi: Özgürlük Temalı Hikâye</a>
                     </h2>
 
                     <div class="d-flex align-items-center">
-                      <img src="assets/img/person/person-m-10.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
+                      <img src="assets/img/person/person-m-10.webp" alt="" class="img-fluid post-author-img flex-shrink-0" />
                       <div class="post-meta">
-                        <p class="post-author">Mark Dower</p>
+                        <p class="post-author">Burak Kömür</p>
                         <p class="post-date">
-                          <time datetime="2022-01-01">Jun 22, 2022</time>
+                          <time datetime="2025-03-12">12 Mart 2025</time>
                         </p>
                       </div>
                     </div>
-
                   </article>
-                </div><!-- End post list item -->
+                </div>
 
+                <!-- Post 4 -->
                 <div class="col-lg-6">
-                  <article>
-
+                  <article class="border-bottom pb-4">
                     <div class="post-img">
-                      <img src="assets/img/blog/blog-post-4.webp" alt="" class="img-fluid">
+                      <img src="assets/img/blog/blog-post-4.webp" alt="" class="img-fluid" />
                     </div>
 
-                    <p class="post-category">Sports</p>
+                    <p class="post-category">Ekonomi</p>
 
                     <h2 class="title">
-                      <a href="blog-details.html">Non rem rerum nam cum quo minus olor distincti</a>
+                      <a href="blog-details.html">Küresel Piyasalarda Yeni Dönem: Fırsatlar ve Riskler</a>
                     </h2>
 
                     <div class="d-flex align-items-center">
-                      <img src="assets/img/person/person-f-14.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
+                      <img src="assets/img/person/person-f-14.webp" alt="" class="img-fluid post-author-img flex-shrink-0" />
                       <div class="post-meta">
-                        <p class="post-author">Lisa Neymar</p>
+                        <p class="post-author">Elif Neymar</p>
                         <p class="post-date">
-                          <time datetime="2022-01-01">Jun 30, 2022</time>
+                          <time datetime="2025-03-25">25 Mart 2025</time>
                         </p>
                       </div>
                     </div>
-
                   </article>
-                </div><!-- End post list item -->
+                </div>
 
+                <!-- Post 5 -->
                 <div class="col-lg-6">
-                  <article>
-
+                  <article class="border-bottom pb-4">
                     <div class="post-img">
-                      <img src="assets/img/blog/blog-post-5.webp" alt="" class="img-fluid">
+                      <img src="assets/img/blog/veri-ana.jpeg" style="width: 100%; height: 110%;" alt="" class="img-fluid" />
                     </div>
 
-                    <p class="post-category">Politics</p>
+                    <p class="post-category">Teknoloji</p>
 
                     <h2 class="title">
-                      <a href="blog-details.html">Accusamus quaerat aliquam qui debitis facilis consequatur</a>
+                      <a href="blog-details.html">Yeni Nesil Veri Analitiği: Dijital Performansın Geleceği</a>
                     </h2>
 
                     <div class="d-flex align-items-center">
-                      <img src="assets/img/person/person-m-11.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
+                      <img src="assets/img/person/person-m-11.webp" alt="" class="img-fluid post-author-img flex-shrink-0" />
                       <div class="post-meta">
-                        <p class="post-author">Denis Peterson</p>
+                        <p class="post-author">Faruk Demir</p>
                         <p class="post-date">
-                          <time datetime="2022-01-01">Jan 30, 2022</time>
+                          <time datetime="2025-04-02">2 Nisan 2025</time>
                         </p>
                       </div>
                     </div>
-
                   </article>
-                </div><!-- End post list item -->
+                </div>
 
+                <!-- Post 6 -->
                 <div class="col-lg-6">
-                  <article>
-
+                  <article class="border-bottom pb-4">
                     <div class="post-img">
-                      <img src="assets/img/blog/blog-post-6.webp" alt="" class="img-fluid">
+                      <img src="assets/img/blog/blog-post-6.webp" alt="" class="img-fluid" />
                     </div>
 
-                    <p class="post-category">Entertainment</p>
+                    <p class="post-category">Sağlık</p>
 
                     <h2 class="title">
-                      <a href="blog-details.html">Distinctio provident quibusdam numquam aperiam aut</a>
+                      <a href="blog-details.html">Modern Yaşamda Zihinsel Sağlığın Önemi Artıyor</a>
                     </h2>
 
                     <div class="d-flex align-items-center">
-                      <img src="assets/img/person/person-f-15.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
+                      <img src="assets/img/person/person-f-15.webp" alt="" class="img-fluid post-author-img flex-shrink-0" />
                       <div class="post-meta">
-                        <p class="post-author">Mika Lendon</p>
+                        <p class="post-author">Fatma Üçler</p>
                         <p class="post-date">
-                          <time datetime="2022-01-01">Feb 14, 2022</time>
+                          <time datetime="2025-04-18">18 Nisan 2025</time>
                         </p>
                       </div>
                     </div>
-
                   </article>
-                </div><!-- End post list item -->
+                </div>
 
               </div>
             </div>
+          </section>
 
-          </section><!-- /Category Postst Section -->
-
-          <!-- Pagination 2 Section -->
-          <section id="pagination-2" class="pagination-2 section">
-
-            <div class="container">
-              <div class="d-flex justify-content-center">
-                <ul>
-                  <li><a href="#"><i class="bi bi-chevron-left"></i></a></li>
-                  <li><a href="#">1</a></li>
-                  <li><a href="#" class="active">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li>...</li>
-                  <li><a href="#">10</a></li>
-                  <li><a href="#"><i class="bi bi-chevron-right"></i></a></li>
-                </ul>
-              </div>
-            </div>
-
-          </section><!-- /Pagination 2 Section -->
+          <!-- Pagination -->
+          
 
         </div>
 
+        <!-- SIDEBAR -->
         <div class="col-lg-4 sidebar">
 
           <div class="widgets-container" data-aos="fade-up" data-aos-delay="200">
 
             <!-- Search Widget -->
             <div class="search-widget widget-item">
-
-              <h3 class="widget-title">Search</h3>
+              <h3 class="widget-title">Arama Yap</h3>
               <form action="">
-                <input type="text">
+                <input type="text" placeholder="Makale ara...">
                 <button type="submit" title="Search"><i class="bi bi-search"></i></button>
               </form>
-
-            </div><!--/Search Widget -->
+            </div>
 
             <!-- Categories Widget -->
             <div class="categories-widget widget-item">
-
-              <h3 class="widget-title">Categories</h3>
+              <h3 class="widget-title">Kategoriler</h3>
               <ul class="mt-3">
-                <li><a href="#">General <span>(25)</span></a></li>
-                <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                <li><a href="#">Travel <span>(5)</span></a></li>
-                <li><a href="#">Design <span>(22)</span></a></li>
-                <li><a href="#">Creative <span>(8)</span></a></li>
-                <li><a href="#">Educaion <span>(14)</span></a></li>
+                <li><a href="#">Spor <span>(25)</span></a></li>
+                <li><a href="#">Eğlence <span>(12)</span></a></li>
+                <li><a href="#">Siyaset <span>(18)</span></a></li>
+                <li><a href="#">Teknoloji <span>(22)</span></a></li>
+                <li><a href="#">Eğitim <span>(14)</span></a></li>
               </ul>
-
-            </div><!--/Categories Widget -->
+            </div>
 
             <!-- Recent Posts Widget -->
             <div class="recent-posts-widget widget-item">
-
-              <h3 class="widget-title">Recent Posts</h3>
+              <h3 class="widget-title">Son Gönderiler</h3>
 
               <div class="post-item">
                 <img src="assets/img/blog/blog-post-square-1.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                  <h4><a href="blog-details.html">Yeni Nesil Teknoloji Trendleri</a></h4>
+                  <time datetime="2025-01-01">1 Ocak 2025</time>
                 </div>
-              </div><!-- End recent post item-->
+              </div>
 
               <div class="post-item">
                 <img src="assets/img/blog/blog-post-square-2.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="blog-details.html">Quidem autem et impedit</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                  <h4><a href="blog-details.html">Günlük Hayatta Verimlilik İpuçları</a></h4>
+                  <time datetime="2025-01-01">1 Ocak 2025</time>
                 </div>
-              </div><!-- End recent post item-->
+              </div>
 
               <div class="post-item">
                 <img src="assets/img/blog/blog-post-square-3.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="blog-details.html">Id quia et et ut maxime similique occaecati ut</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                  <h4><a href="blog-details.html">Sosyal Medyanın Yeni Dönemi</a></h4>
+                  <time datetime="2025-01-01">1 Ocak 2025</time>
                 </div>
-              </div><!-- End recent post item-->
+              </div>
 
               <div class="post-item">
                 <img src="assets/img/blog/blog-post-square-4.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="blog-details.html">Laborum corporis quo dara net para</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                  <h4><a href="blog-details.html">Yaratıcılığı Artıran Basit Yöntemler</a></h4>
+                  <time datetime="2025-01-01">1 Ocak 2025</time>
                 </div>
-              </div><!-- End recent post item-->
+              </div>
 
               <div class="post-item">
                 <img src="assets/img/blog/blog-post-square-5.webp" alt="" class="flex-shrink-0">
                 <div>
-                  <h4><a href="blog-details.html">Et dolores corrupti quae illo quod dolor</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                  <h4><a href="blog-details.html">Başarılı Yazarların Sırları</a></h4>
+                  <time datetime="2025-01-01">1 Ocak 2025</time>
                 </div>
-              </div><!-- End recent post item-->
-
-            </div><!--/Recent Posts Widget -->
+              </div>
+            </div>
 
             <!-- Tags Widget -->
             <div class="tags-widget widget-item">
-
-              <h3 class="widget-title">Tags</h3>
+              <h3 class="widget-title">Taglar</h3>
               <ul>
-                <li><a href="#">App</a></li>
-                <li><a href="#">IT</a></li>
-                <li><a href="#">Business</a></li>
+                <li><a href="#">Uygulama</a></li>
+                <li><a href="#">BT</a></li>
+                <li><a href="#">İş Dünyası</a></li>
                 <li><a href="#">Mac</a></li>
-                <li><a href="#">Design</a></li>
-                <li><a href="#">Office</a></li>
-                <li><a href="#">Creative</a></li>
-                <li><a href="#">Studio</a></li>
-                <li><a href="#">Smart</a></li>
-                <li><a href="#">Tips</a></li>
-                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Tasarım</a></li>
+                <li><a href="#">Ofis</a></li>
+                <li><a href="#">Yaratıcılık</a></li>
+                <li><a href="#">Stüdyo</a></li>
+                <li><a href="#">Akıllı Teknolojiler</a></li>
+                <li><a href="#">İpuçları</a></li>
+                <li><a href="#">Pazarlama</a></li>
               </ul>
-
-            </div><!--/Tags Widget -->
+            </div>
 
           </div>
 
@@ -422,87 +370,61 @@
 
   </main>
 
+
   <footer id="footer" class="footer">
+      <div class="container footer-top">
+        <div class="row gy-4">
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Blogy</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <!-- ABOUT -->
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span style="color: #279a7d;">Blogy .</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>A108 Adam Caddesi</p>
+              <p>Kocaeli, NY 535022</p>
+              <p class="mt-3">
+                <strong>Telefon:</strong> <span>+90 5344095872</span>
+              </p>
+              <p><strong>E-posta:</strong> <span>blogy@blogy.com</span></p>
+            </div>
+            
           </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+
+          <!-- USEFUL LINKS -->
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4 style="color: #279a7d;">Hızlı Erişim Bağlantılar</h4>
+            <ul>
+              <li><a href="index.html">Ana Sayfa</a></li>
+              <li><a href="about.html">Hakkımızda</a></li>
+              <li><a href="category.html">Kategori</a></li>
+              <li><a href="contact.html">İletişim</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4 style="color: #279a7d;">Sosyal Medialar</h4>
+            <div class="social-links d-flex mt-4">
+              <a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
         </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Hic solutasetp</h4>
-          <ul>
-            <li><a href="#">Molestiae accusamus iure</a></li>
-            <li><a href="#">Excepturi dignissimos</a></li>
-            <li><a href="#">Suscipit distinctio</a></li>
-            <li><a href="#">Dilecta</a></li>
-            <li><a href="#">Sit quas consectetur</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Nobis illum</h4>
-          <ul>
-            <li><a href="#">Ipsam</a></li>
-            <li><a href="#">Laudantium dolorum</a></li>
-            <li><a href="#">Dinera</a></li>
-            <li><a href="#">Trodelas</a></li>
-            <li><a href="#">Flexo</a></li>
-          </ul>
-        </div>
-
       </div>
-    </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Blogy</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Telif Hakkı</span> <strong style="color: #279a7d;">Blogy</strong>
+          <span>Tüm Hakları Saklıdır</span>
+        </p>
+        <div class="credits">
+          ABOUBACAR SOW
+        </div>
       </div>
-    </div>
-
-  </footer>
+    </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
