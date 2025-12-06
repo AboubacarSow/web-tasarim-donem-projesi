@@ -22,6 +22,21 @@
   document.addEventListener('scroll', toggleScrolled);
   window.addEventListener('load', toggleScrolled);
 
+
+  /**
+   * Faq questions
+   */
+
+document.querySelectorAll(".faq-item-card").forEach(card => {
+    const button = card.querySelector(".faq-question");
+
+    button.addEventListener("click", (e) => {
+        e.preventDefault(); // Prevent scroll or page jump
+        card.classList.toggle("active");
+    });
+});
+
+
   /**
    * Mobile nav toggle
    */

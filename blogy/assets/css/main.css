@@ -131,6 +131,110 @@ h6 {
   animation: php-email-form-loading 1s linear infinite;
 }
 
+/* FAQ Section */
+.faq-section {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.faq-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+/* FAQ Section */
+.faq-section {
+    margin-top: 50px;
+}
+
+.faq-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    border: 1px solid #f3f3f3;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.faq-item-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    color: var(--accent-color)
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 0;
+    transition: max-height 0.35s ease, opacity 0.35s ease, margin-top 0.35s ease;
+}
+
+.faq-item-card.active .faq-answer {
+    max-height: 200px; /* BIG VALUE SO IT ALWAYS OPENS */
+    opacity: 1;
+    margin-top: 12px;
+    overflow: scroll;
+}
+
+.faq-item-card.active .arrow {
+    transform: rotate(180deg);
+}
+
+
+
+
 @keyframes php-email-form-loading {
   0% {
     transform: rotate(0deg);

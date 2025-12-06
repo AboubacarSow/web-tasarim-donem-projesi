@@ -34,59 +34,102 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style>
+      /* FAQ Section */
+  .faq-section {
+      margin-top: 40px;
+      padding: 20px;
+  }
+
+  .faq-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+  }
+
+  .faq-item {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+  }
+
+  .faq-question {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .faq-answer {
+      display: none;
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 1.5;
+  }
+
+  .faq-item.active .faq-answer {
+      display: block;
+  }
+
+  .faq-item.active .arrow {
+      transform: rotate(180deg);
+  }
+
+  .arrow {
+      transition: 0.3s;
+  }
+
+  </style>
+
 </head>
 
 <body class="about-page">
 
   <header id="header" class="header position-relative">
-      <div class="container-fluid container-xl position-relative">
-        <div class="top-row d-flex align-items-center justify-content-between">
-          <a href="index.html" class="logo d-flex align-items-end">
-            <h1 class="sitename">Blogy</h1>
-            <span>.</span>
-          </a>
+    <div class="container-fluid container-xl position-relative">
+      <div class="top-row d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-end">
+          <h1 class="sitename">Blogy</h1>
+          <span>.</span>
+        </a>
 
-          <div class="d-flex align-items-center">
-            <div class="social-links">
-              <a href="https://www.facebook.com/" class="facebook"
-                ><i class="bi bi-facebook"></i
-              ></a>
-              <a href="https://www.twitter.com/" class="twitter"
-                ><i class="bi bi-twitter"></i
-              ></a>
-              <a href="https://www.instagram.com/" class="instagram"
-                ><i class="bi bi-instagram"></i
-              ></a>
-              <a href="https://www.bi-linkedin.com/" class="instagram"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-            </div>
-
-            <form class="search-form ms-4">
-              <input type="text" placeholder="Ara..." class="form-control" />
-              <button type="submit" class="btn">
-                <i class="bi bi-search"></i>
-              </button>
-            </form>
+        <div class="d-flex align-items-center">
+          <div class="social-links">
+            <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.bi-linkedin.com/" class="instagram"><i class="bi bi-linkedin"></i></a>
           </div>
-        </div>
-      </div>
 
-      <div class="nav-wrap">
-        <div class="container d-flex justify-content-center position-relative">
-          <nav id="navmenu" class="navmenu">
-            <ul>
-              <li><a href="index.html" class="active">Ana Sayfa</a></li>
-              <li><a href="about.html">Hakkımızda</a></li>
-              <li><a href="category.html">Kategoriler</a></li>
-              <li><a href="blogs.html">Bloglar</a></li>
-              <li><a href="author-profile.html">Author Profile</a></li>
-              <li><a href="contact.html">İletişim</a></li>
-            </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-          </nav>
+          <form class="search-form ms-4">
+            <input type="text" placeholder="Ara..." class="form-control" />
+            <button type="submit" class="btn">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
         </div>
       </div>
+    </div>
+
+    <div class="nav-wrap">
+      <div class="container d-flex justify-content-center position-relative">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">Ana Sayfa</a></li>
+            <li><a href="about.html">Hakkımızda</a></li>
+            <li><a href="category.html">Kategoriler</a></li>
+            <li><a href="blogs.html">Bloglar</a></li>
+            <li><a href="author-profile.html">Author Profile</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <main class="main">
@@ -189,12 +232,12 @@
       </div>
 
     </div>
-  </section>
+   </section>
 
 
     <!-- Team Section -->
     <!-- Team Section -->
-  <section id="team" class="team section light-background">
+   <section id="team" class="team section light-background">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
@@ -324,9 +367,59 @@
 
     </div>
 
-  </section><!-- /Team Section -->
+   </section><!-- /Team Section -->
 
     <!-- /Team Section -->
+   <section class="faq-section">
+    <h2 class="faq-title">Sıkça Sorulan Sorular</h2>
+
+    <div class="faq-list">
+
+        <div class="faq-item-card">
+            <button class="faq-question">
+                Bu blogun amacı nedir?
+                <span class="arrow">^</span>
+            </button>
+            <div class="faq-answer">
+                Bu blog, web geliştirme, modern teknolojiler ve yazılım trendleri üzerine bilgilendirici içerikler sunmak için oluşturulmuştur.
+            </div>
+        </div>
+
+        <div class="faq-item-card">
+            <button class="faq-question">
+                Yeni yazılar ne sıklıkla yayınlanıyor?
+                <span class="arrow">^</span>
+            </button>
+            <div class="faq-answer">
+                Genellikle haftada en az bir yeni içerik yayınlanmaktadır.
+            </div>
+        </div>
+
+        <div class="faq-item-card">
+            <button class="faq-question">
+                Abone olup güncellemeleri alabilir miyim?
+                <span class="arrow">^</span>
+            </button>
+            <div class="faq-answer">
+                Evet. Bültene abone olarak yeni yazılardan anında haberdar olabilirsiniz.
+            </div>
+        </div>
+
+        <div class="faq-item-card">
+            <button class="faq-question">
+                Yazarla nasıl iletişime geçebilirim?
+                <span class="arrow">^</span>
+            </button>
+            <div class="faq-answer">
+                İletişim formu üzerinden doğrudan yazarla iletişim kurabilirsiniz.
+            </div>
+        </div>
+
+    </div>
+  </section>
+
+
+
 
   </main>
 
