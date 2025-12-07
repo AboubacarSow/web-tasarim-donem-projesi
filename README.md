@@ -1,121 +1,93 @@
-# 📰 Blogy – Modern Blog Web Sitesi
+# 📰 Blogy – Modern Blog Web Sitesi & Admin Paneli
 
-🚀 **HTML, CSS, Bootstrap ve JavaScript kullanılarak geliştirilmiş modern, temiz ve tamamen responsive bir blog arayüzü.**
+🚀 **HTML, CSS, Bootstrap ve JavaScript kullanılarak geliştirilmiş modern, temiz ve tamamen responsive bir blog arayüzü ve yönetim paneli.**
 
----
-
-## 📌 Genel Bakış
-
-**Blogy**, modern ve estetik bir kullanıcı deneyimi sunmak için tasarlanmış bir web tasarım projesidir.
-
-Proje, blog içeriklerini düzenli ve şık bir şekilde göstermek amacıyla hazırlanmıştır.
-Bu proje aşağıdaki özellikleri içerir:
-
-* Dinamik ana sayfa
-* Swiper.js slider
-* “Featured Posts” bölümleri
-* Teknoloji, Güvenlik, Kariyer, Bulut, Gaming, Bitki vb. kategoriler
-* Blog detay sayfası (`blog-details.html`)
+Hem kullanıcı tarafı (frontend blog sitesi) hem de yönetici tarafı (admin panel) tek bir projede sunulmaktadır.
 
 ---
 
-## 🎨 Özellikler
+# 📌 Genel Bakış
 
-* **✔ Responsive Tasarım**
-    Tüm ekran boyutlarına uyumlu modern yapı.
+**Blogy**, modern ve estetik bir kullanıcı deneyimi sunmak için hazırlanmış bir web tasarım projesidir.
 
-* **✔ Swiper Slider**
-    Öne çıkan yazılar için akıcı slider bileşeni.
+Bu proje iki ana bölümden oluşur:
 
-* **✔ Blog Kategorileri**
-    Her yazıda kategori, görsel, yazar bilgisi, tarih ve başlık bulunur.
+### **🌐 1. Blog Arayüzü (Frontend)**  
+Ziyaretçiler için şık, hızlı ve tam responsive bir blog sitesi.
 
-* **✔ Modern UI Öğeleri**
-    * Blog kartları
-    * Meta bilgi alanları
-    * “Daha Fazla Oku” butonları
-    * Bootstrap Icons entegrasyonu
-
-* **✔ Optimize Görseller**
-    **.webp** formatı ve `loading="lazy"` ile performans artırımı.
+### **🛠 2. Admin Paneli (Backend UI)**  
+Blog, kategori, yazar, mesaj ve iletişim içeriklerini yönetmek için tasarlanmış bir yönetim paneli.
 
 ---
 
-## 🛠 Kullanılan Teknolojiler
+# 🎨 Blog Arayüzü Özellikleri
+
+* ✔ **Responsive tasarım**
+* ✔ **Swiper.js slider**
+* ✔ **Featured Posts** alanları
+* ✔ Kategorilere göre ayrılmış blog kartları
+* ✔ Lazy-loaded WebP görseller
+* ✔ Blog detay sayfası (`blog-details.html`)
+* ✔ Modern UI bileşenleri
+
+---
+
+# 🛠 Admin Paneli Özellikleri
+
+Admin paneli tamamen profesyonel bir CMS yapısını taklit edecek şekilde tasarlanmıştır.
+
+### **📊 Dashboard**
+* Blog, yazar, kategori ve mesaj sayıları  
+* Son eklenen bloglar tablosu  
+* Chart.js grafikler (yayın istatistikleri + histogram)
+
+### **✍️ Blog Yönetimi**
+* blogs.html  
+* create-blog.html  
+* edit-blog.html  
+* blog-detail.html  
+* TinyMCE editör (API key gerektirir)
+
+### **🏷 Kategori Yönetimi**
+* categories.html  
+* create-category.html  
+* edit-category.html  
+
+### **👥 Yazar Yönetimi**
+* authors.html  
+* create-author.html  
+* edit-author.html  
+
+### **✉ Mesaj Yönetimi**
+* messages.html  
+* message-details.html  
+* Konu alanı için badge destekli
+
+### **📞 İletişim Yönetimi**
+* contacts.html  
+* create-contact.html  
+* edit-contact.html  
+
+### **⚙ Ayarlar**
+* parameters.html  
+* Site başlığı, logo, footer, güvenlik ayarları vb.
+
+### **🔐 Kimlik Doğrulama (Auth)**
+* login.html  
+* register.html  
+* auth.css ile gradyan arka plan ve modern kart tasarımı
+
+---
+
+# 🧩 Kullanılan Teknolojiler
 
 | Teknoloji | Açıklama |
 | :--- | :--- |
 | **HTML5** | Sayfa yapısı |
 | **CSS3 / SCSS** | Stil düzeni |
-| **Bootstrap 5** | Grid ve responsive yapı |
-| **JavaScript** | Dinamik işlevler |
-| **Swiper.js** | Slider sistemi |
+| **Bootstrap 5** | Responsive grid sistemi |
 | **Bootstrap Icons** | İkon seti |
-| **WebP** | optimize görseller |
-
----
-
-## 📁 Proje Yapısı
-
-```
-/blogy
-    /assets
-    /css
-    /js
-    /img
-        /blog
-        /person
-
-index.html
-blog-details.html
-README.md
-```
-
----
-
-## 🚀 Projeyi Çalıştırma
-
-Bu proje tamamen **statiktir**, backend gerektirmez.
-
-1.  Projeyi klonlayın:
-    ```bash
-    git clone [https://github.com/AboubacarSOW/blogy.git](https://github.com/AboubacarSOW/blogy.git)
-    ```
-2.  `index.html` dosyasını tarayıcıda açın.
-
----
-
-## 🔧 Özelleştirme
-
-Kolayca düzenleyebilirsiniz:
-
-* Renkler ve tipografi
-* Kategoriler
-* Kart içerikleri
-* Slider ayarları (`/assets/js/main.js`)
-* Yeni blog yazıları ekleme
-
----
-
-## 🌱 Gelecek Geliştirmeler
-
-* Yorum sistemi
-* Karanlık mod (Dark Mode)
-* Headless CMS (Strapi, Sanity)
-* Projeyi React veya Angular ile yeniden geliştirme
-
----
-
-## 👨‍💻 Geliştirici
-
-**Aboubacar SOW**
-
-Web Developer & Bilgisayar Mühendisliği Öğrencisi
-
-Kocaeli Üniversitesi – Türkiye
-
----
-
-## ⭐ Destek
-
-Projeyi beğendiysen **GitHub**’da ⭐ vermeyi unutma!
+| **JavaScript** | Dinamik işlemler |
+| **Swiper.js** | Slider sistemi |
+| **Chart.js** | Dashboard grafikleri |
+| **TinyM
