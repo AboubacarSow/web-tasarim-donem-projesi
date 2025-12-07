@@ -66,3 +66,10 @@ upload.addEventListener("change", () => {
     preview.src = URL.createObjectURL(file);
   }
 });
+
+document.querySelectorAll('.nav-link[data-bs-toggle="collapse"]').forEach(link => {
+  link.addEventListener('click', () => {
+    const icon = link.querySelector('.bi-chevron-down');
+    if(icon) icon.classList.toggle('rotate');
+  });
+});
