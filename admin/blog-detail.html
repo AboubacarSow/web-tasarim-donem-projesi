@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogy Admin - Blog Detayı</title>
+  <link href="assets/img/favicon.png" rel="icon" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="burger-item">
+        <h4 class="mb-4" style="color:rgb(244, 244, 244); text-align: center;">Blogy.   Admin</h4>
+        <button class="burger-btn d-lg-none" id="sidebarToggle">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <ul class="nav-items">
+        <a href="dashboard.html"><i class="bi bi-speedometer2 me-2"></i> Dashboard</a>
+        <a href="blogs.html" class="active"><i class="bi bi-journal-text me-2"></i> Bloglar</a>
+        <a href="categories.html"><i class="bi bi-tags me-2"></i> Kategoriler</a>
+        <a href="authors.html"><i class="bi bi-people me-2"></i> Yazarlar</a>
+        <a href="messages.html"><i class="bi bi-envelope me-2"></i> Mesajlar</a>
+        <a href="contacts.html"><i class="bi bi-person-rolodex me-2"></i> İletişim</a>
+        <a href="parameters.html"><i class="bi bi-gear me-2"></i> Ayarlar</a>
+    </ul>
+    <div class="sidebar-footer mt-auto text-center position-relative mb-0">
+        <a href="login.html" class="btn btn-danger mx-3 mb-4 w-100"><i class="bi bi-box-arrow-right me-2"></i> Çıkış Yap</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  
+  <!-- MAIN CONTENT -->
+  <div class="content">
+      <div class="topbar">
+        <h3 class="text-center mb-3">Blog Detayı</h3>
+      </div>
+    <!-- Blog Header -->
+    <div class="card shadow-sm mb-4">
+      <div class="card-body">
+
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/img/blog/blog-post-1.webp" class="img-fluid rounded shadow-sm" alt="">
+          </div>
+
+          <div class="col-md-8">
+            <h3 class="fw-bold">Software Defined Networking Nedir?</h3>
+
+            <p class="text-muted mb-2">
+              <i class="bi bi-person"></i> Ayşe Güler  
+              &nbsp;&nbsp;|&nbsp;&nbsp;
+              <i class="bi bi-calendar"></i> 15 Mart 2025
+            </p>
+
+            <p>
+              Yazılım Tanımlı Ağ (SDN), modern veri merkezi ve bulut altyapılarında kullanılan
+              yeni nesil bir ağ mimarisidir. Denetim düzlemi ile veri düzlemini ayırarak,
+              ağ yönetimine esneklik ve otomasyon sağlar.
+            </p>
+
+            <div class="mt-3">
+              <a href="blog-update.html" class="btn btn-warning me-2 text-light">
+                <i class="bi bi-pencil"></i> Düzenle
+              </a>
+
+              <a href="#" class="btn btn-danger">
+                <i class="bi bi-trash"></i> Sil
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- STATISTICS -->
+    <div class="row g-4 mb-4">
+
+      <div class="col-md-4">
+        <div class="card shadow-sm p-3">
+          <h6 class="text-muted">Görüntülenme</h6>
+          <h2 class="fw-bold">1.482</h2>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm p-3">
+          <h6 class="text-muted">Yorumlar</h6>
+          <h2 class="fw-bold">27</h2>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card shadow-sm p-3">
+          <h6 class="text-muted">Beğeniler</h6>
+          <h2 class="fw-bold">312</h2>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- COMMENTS TABLE -->
+    <div class="card shadow-sm mb-5">
+      <div class="card-body">
+
+        <h4 class="mb-3">Yorumlar</h4>
+
+        <table class="table align-middle">
+          <thead>
+            <tr>
+              <th>Ad Soyad</th>
+              <th>Yorum</th>
+              <th>Tarih</th>
+              <th class="text-end">Aksiyon</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Mehmet Ali</td>
+              <td>Gerçekten açıklayıcı bir yazı olmuş.</td>
+              <td>12 Mart 2025</td>
+              <td class="text-end">
+                <button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Selin K.</td>
+              <td>SDN mimarisini çok net anlatmışsınız.</td>
+              <td>10 Mart 2025</td>
+              <td class="text-end">
+                <button class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></button>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

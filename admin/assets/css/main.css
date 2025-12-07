@@ -1,0 +1,253 @@
+/**
+* Template Name: Blogy
+* Template URL: https://bootstrapmade.com/blogy-bootstrap-blog-template/
+* Updated: Feb 22 2025 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+@charset "UTF-8";
+
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
+/* Fonts */
+:root {
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Nunito", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root {
+  --background-color: #ffffff;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #383838;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #2d465e;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #279a7d;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #000000;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #279a7d;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #279a7d;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #f9f9f9;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #060606;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #252525;
+  --contrast-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+/* Layout */
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+/* ----------------------------- */
+/* SIDEBAR */
+/* ----------------------------- */
+
+/* SIDEBAR BASE */
+.sidebar {
+  width: 250px;
+  background: #279a7d;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar h4 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  color: #ddd;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: #fff;
+  color: #279a7d;
+}
+
+.burger-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* BURGER BUTTON */
+.burger-btn {
+  bottom: 15px;
+  z-index: 1000;
+  background: none;
+  border: none;
+  color: #343a40;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  /* hidden by default (desktop) */
+}
+
+.nav-items {
+  margin-left: 0;
+}
+
+
+/* MAIN CONTENT */
+.content {
+  margin-left: 250px;
+  padding: 25px;
+  width: calc(100% - 250px);
+  transition: margin-left 0.3s ease;
+}
+
+.carte {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.card {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f3f3f3;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.blog-content p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.image-preview {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: none;
+}
+
+.sidebar-card {
+  border-left: 5px solid #0d6efd;
+}
+
+
+.sidebar-footer {
+  padding: 15px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.sidebar-footer .btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.auth-card {
+  max-width: 420px;
+}
+
+.auth-header h3 {
+  font-weight: 700;
+}
+
+.auth-card .form-control {
+  padding: 10px 12px;
+}
+
+/* ------------------- */
+/* RESPONSIVE (MOBILE) */
+/* ------------------- */
+@media (max-width: 768px) {
+
+  /* Sidebar hidden by default */
+  .sidebar {
+    height: auto;
+    width: 100%;
+  }
+
+  .burger-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* When toggled, show it */
+  .sidebar.show .nav-items,
+  .sidebar.show .sidebar-footer {
+    display: block;
+  }
+
+  .nav-items .sidebar-footer {
+    display: none;
+  }
+
+  /* Burger visible on mobile */
+  .burger-btn {
+    display: block;
+    color: white;
+  }
+
+  /* Content expands full width */
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+}

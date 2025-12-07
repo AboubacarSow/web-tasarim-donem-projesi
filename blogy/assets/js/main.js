@@ -28,13 +28,21 @@
    */
 
 document.querySelectorAll(".faq-item-card").forEach(card => {
-    const button = card.querySelector(".faq-question");
+        const button = card.querySelector(".faq-question");
+        const answer = card.querySelector(".faq-answer");
 
-    button.addEventListener("click", (e) => {
-        e.preventDefault(); // Prevent scroll or page jump
-        card.classList.toggle("active");
+        button.addEventListener("click", (e) => {
+            e.preventDefault(); 
+            
+            card.classList.toggle("active");
+
+            if (card.classList.contains("active")) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            } else {
+                answer.style.maxHeight = null;
+            }
+        });
     });
-});
 
 
   /**

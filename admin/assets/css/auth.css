@@ -1,0 +1,39 @@
+  body {
+      background: linear-gradient(135deg, #bab4af, rgb(117, 168, 155), #6aa294, #4b9e89);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .auth-card {
+      max-width: 360px;
+      /* smaller width */
+      width: 100%;
+      border-radius: 12px;
+  }
+
+  .auth-header h3 {
+      font-weight: 700;
+  }
+
+  .form-control {
+      padding: 10px 12px;
+  }
+
+  .btn {
+      background: linear-gradient(135deg, #bab4af, rgb(117, 168, 155), #57b39c, #279a7d);
+      border: none;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration: underline;
+  }
+
+  .title {
+      color: #57b39c;
+  }
