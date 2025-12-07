@@ -24,14 +24,84 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-        <ul class="nav-items">
-            <a href="dashboard.html"><i class="bi bi-speedometer2 me-2"></i> Dashboard</a>
-            <a href="blogs.html"><i class="bi bi-journal-text me-2"></i> Bloglar</a>
-            <a href="categories.html"><i class="bi bi-tags me-2"></i> Kategoriler</a>
-            <a href="authors.html"><i class="bi bi-people me-2"></i> Yazarlar</a>
-            <a href="messages.html" class="active"><i class="bi bi-envelope me-2"></i> Mesajlar</a>
-            <a href="contacts.html"><i class="bi bi-person-rolodex me-2"></i> İletişim</a>
-            <a href="parameters.html"><i class="bi bi-gear me-2  "></i> Ayarlar</a>
+        <ul class="nav-items nav flex-column nav-pills">
+            <li class="nav-item">
+                <a href="dashboard.html" class="nav-link ">
+                    <i class="bi bi-speedometer2 me-2"></i> Dashboard
+                </a>
+            </li>
+
+            <!-- Blogs -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-toggle="collapse" href="#blogsMenu" role="button" aria-expanded="false" aria-controls="blogsMenu">
+                    <i class="bi bi-journal-text me-2"></i> Bloglar
+                </a>
+            <div class="collapse" id="blogsMenu">
+                <ul class="nav flex-column ms-3">
+                    <li class="nav-item">
+                        <a href="blogs.html" class="nav-link">Listele</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="create-blog.html" class="nav-link">Oluştur</a>
+                    </li>
+                </ul>
+            </div>
+            </li>
+
+            <!-- Categories -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-toggle="collapse" href="#categoriesMenu" role="button" aria-expanded="false" aria-controls="categoriesMenu">
+                    <i class="bi bi-tags me-2"></i> Kategoriler
+                </a>
+                <div class="collapse" id="categoriesMenu">
+                    <ul class="nav flex-column ms-3">
+                    <li class="nav-item">
+                        <a href="categories.html" class="nav-link">Listele</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="create-category.html" class="nav-link">Oluştur</a>
+                    </li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Authors -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-toggle="collapse" href="#authorsMenu" role="button" aria-expanded="false" aria-controls="authorsMenu">
+                    <i class="bi bi-people me-2"></i> Yazarlar
+                </a>
+                <div class="collapse" id="authorsMenu">
+                    <ul class="nav flex-column ms-3">
+                    <li class="nav-item">
+                        <a href="authors.html" class="nav-link">Listele</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="create-author.html" class="nav-link">Oluştur</a>
+                    </li>
+                    </ul>
+                </div>
+            </li>
+
+            <!-- Messages -->
+            <li class="nav-item">
+                <a href="messages.html" class="nav-link active">
+                    <i class="bi bi-envelope me-2"></i> Mesajlar
+                </a>
+            </li>
+
+            <!-- Contacts -->
+            <li class="nav-item">
+                <a href="contacts.html" class="nav-link">
+                    <i class="bi bi-person-rolodex me-2"></i> İletişim
+                </a>
+            </li>
+
+            <!-- Settings -->
+            <li class="nav-item">
+                <a href="parameters.html" class="nav-link">
+                    <i class="bi bi-gear me-2"></i> Ayarlar
+                </a>
+            </li>
         </ul>
         <div class="sidebar-footer mt-auto text-center position-relative mb-0">
         <a href="login.html" class="btn btn-danger mx-3 mb-4 w-100"><i class="bi bi-box-arrow-right me-2"></i> Çıkış Yap</a>

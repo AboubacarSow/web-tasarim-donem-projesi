@@ -115,7 +115,7 @@ body {
 }
 
 .sidebar a:hover,
-.sidebar a.active {
+.sidebar a.nav-link.active {
   background: #fff;
   color: #279a7d;
 }
