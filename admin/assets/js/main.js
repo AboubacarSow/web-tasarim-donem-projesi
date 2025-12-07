@@ -1,10 +1,14 @@
 // Sidebar toggle (Desktop button)
 document.getElementById("sidebarToggle")?.addEventListener("click", () => {
+  const toggle = document.querySelector("#sidebarToggle i"); // select the <i> inside the button
+  toggle.classList.toggle("bi-list"); // remove the hamburger
+  toggle.classList.toggle("bi-x");
   document.getElementById("sidebar").classList.toggle("show");
 });
 
 // Sidebar toggle (Mobile top header button)
 document.getElementById("mobileToggle")?.addEventListener("click", () => {
+
   document.getElementById("sidebar").classList.toggle("show");
 });
 

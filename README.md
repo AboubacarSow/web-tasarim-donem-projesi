@@ -90,4 +90,45 @@ Admin paneli tamamen profesyonel bir CMS yapısını taklit edecek şekilde tasa
 | **JavaScript** | Dinamik işlemler |
 | **Swiper.js** | Slider sistemi |
 | **Chart.js** | Dashboard grafikleri |
-| **TinyM
+| **TinyM** | Editor|
+
+
+---
+ ## 🚀 Projeyi Çalıştırma Bu proje tamamen **statiktir**, backend gerektirmez. 
+ 1. Projeyi klonlayın:
+
+```
+    git clone https://github.com/AboubacarSOW/blogy.git
+```
+2. index.html dosyasını tarayıcıda açın. 
+---
+
+
+## 📸 Hızlı Görsel Önizleme
+
+<img src="https://i.hizliresim.com/pmrmy6d.png">
+<hr/>
+<img src="https://i.hizliresim.com/qqjl802.png">
+<hr/>
+<img src="https://i.hizliresim.com/9iefyps.png">
+<hr/>
+<img src="https://i.hizliresim.com/9h9cvfs.png">
+<hr/>
+<img src="https://i.hizliresim.com/kbzbagf.png">
+<hr/>
+<img src="https://i.hizliresim.com/cloqz3r.png">
+<hr/>
+<img src="https://i.hizliresim.com/7yrc2jc.png">
+<hr/>
+<img src="https://i.hizliresim.com/34fu37i.png">
+<hr/>
+<img src="https://i.hizliresim.com/j5hmznd.png">
+<hr/>
+<img src="https://i.hizliresim.com/1sdeudi.png">
+<hr/>
+<img src="https://i.hizliresim.com/73eyytu.png">
+<hr/>
+<img src="https://i.hizliresim.com/tt202f7.png">
+<hr/>
+<img src="https://i.hizliresim.com/31baw43.png">
+
