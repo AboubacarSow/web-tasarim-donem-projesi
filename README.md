@@ -102,7 +102,9 @@ Admin paneli tamamen profesyonel bir CMS yapısını taklit edecek şekilde tasa
 ```
 2. index.html dosyasını tarayıcıda açın. 
 ---
-
+## Demo
+Link blog: https://blogyspace.netlify.app/blogy
+Link admin: https://blogyspace.netlify.app/admin/dashboard
 
 ## 📸 Hızlı Görsel Önizleme
 
